@@ -41,4 +41,4 @@ Key areas of focus include:
 4. Install the dependencies listed in `requirements.txt` and run the notebook.
 
 ## Featured Notebooks
-* [Course_Analytics_EDA.ipynb](#)
+* [Course_Analytics_EDA.ipynb](https://github.com/vladvintenbakh/SkillboxAnalytics/blob/main/Skillbox_Course_Analytics.ipynb)
