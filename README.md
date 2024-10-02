@@ -1,41 +1,44 @@
-# Skillbox Platform Course Analytics
+# Skillbox Course Analytics
 
-The business goal of this project is to prepare an analytics report based on which course creators and editors can update and improve the courses. 
+## Project Objective
+The goal of this project is to analyze course performance and student progress to help Skillbox course creators and editors improve the content and management of courses. By examining various course metrics, this analysis aims to evaluate instructor workload, assess content quality, and investigate seasonal variations. The insights from this analysis will inform decisions about Skillbox course updates, workload distribution, and content revisions, contributing to an enhanced learning experience for students.
 
-A brief analytical description for each course will be formed first based on the calculated metrics. Then potential course instructor workload will be calculated to evaluate the need to hire more employees. After that, course content quality will be investigated to potentially identify problematic modules that require revision. Finally, presence of seasonal variation will be investigated.
+### Methods Used
+* Exploratory Data Analysis
+* Data Visualization
+* Descriptive Statistics
+* Seasonal Trend Analysis
 
-The `progress_phases.csv` dataset was too large to upload to the repository, so it can be downloaded [here](https://drive.google.com/file/d/1uejxyeuFtVLNOZtl_3W85o9U2xdpKogM/view?usp=sharing)
+### Technologies
+* Python
+* Jupyter
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
 
-## Codebook
+## Project Description
+This project involves performing an exploratory data analysis (EDA) on various datasets related to course offerings, student progress, and course content. The analysis focuses on understanding course performance, student engagement, instructor workload, and the quality of course modules. The data includes student demographics, course details, and lesson progress, which are used to derive key insights.
 
-`courses.csv` contains the following columns: <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp; `id` - course id <br>
-&nbsp;&nbsp;&nbsp;&nbsp; `title` – course title <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `field` – type of the course <br> <br><br>
-`students.csv` contains the following columns: <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp; `id` – student id <br>
-&nbsp;&nbsp;&nbsp;&nbsp; `city` – student's city of residence <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `birthday` – student's birthday <br> <br><br>
-`course_contents.csv` contains the following columns: <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp; `course_id` – course id <br>
-&nbsp;&nbsp;&nbsp;&nbsp; `module_number` – number of the module within a course <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `module_title` – module title <br> 
-&nbsp;&nbsp;&nbsp;&nbsp; `lesson_number` – number of the lesson within a module <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `lesson_title` – lesson title <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `lesson_token` – internal lesson identification token <br> 
-&nbsp;&nbsp;&nbsp;&nbsp; `is_video` – whether a video is present in the lesson *(true/false)* <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `is_homework` – whether the lesson is a homework *(true/false)* <br>
-<br><br>
-`progresses.csv` contains the following columns: <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp; `id` – progress id <br>
-&nbsp;&nbsp;&nbsp;&nbsp; `student_id` – student id <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `course_id` – course id <br> <br><br>
-`progress_phases.csv` contains the following columns: <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp; `progress_id` – progress id <br>
-&nbsp;&nbsp;&nbsp;&nbsp; `module_number` – module number <br>
-&nbsp;&nbsp;&nbsp;&nbsp; `lesson_number` – number of the lesson within a module <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `status` – lesson completion status <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  `start_date` – lesson start date <br> 
-&nbsp;&nbsp;&nbsp;&nbsp; `finish_date` – lesson finish date <br>
-<br><br>
+Key areas of focus include:
+1. Forming analytical descriptions for each course based on calculated metrics.
+2. Evaluating the potential instructor workload to determine if additional hires are necessary.
+3. Investigating course content quality to identify problematic modules requiring revision.
+4. Analyzing the presence of seasonal variations in student progress and engagement.
 
+## Project Needs
+- Data exploration and descriptive statistics
+- Workload analysis
+- Course quality assessment
+- Data visualization
+- Reporting and recommendations
+
+## Getting Started
+
+1. Clone this repo (for help, see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. The `progress_phases.csv` dataset was too large to upload to the repository, but it can be downloaded [here](https://drive.google.com/file/d/1uejxyeuFtVLNOZtl_3W85o9U2xdpKogM/view?usp=sharing).
+3. The primary Jupyter notebook for the project is kept [here](https://github.com/vladvintenbakh/SkillboxAnalytics/blob/main/Skillbox_Course_Analytics.ipynb).
+4. Install the dependencies listed in `requirements.txt` and run the notebook.
+
+## Featured Notebooks
+* [Course_Analytics_EDA.ipynb](#)
